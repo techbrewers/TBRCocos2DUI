@@ -2,7 +2,7 @@
 //  HelloWorldScene.h
 //  TBRCocos2DUIExample
 //
-//  Created by Luciano Marisi on 19/07/2014.
+//  Created by Luciano Marisi on 07/08/2014.
 //  Copyright TechBrewers LTD. 2014. All rights reserved.
 //
 // -----------------------------------------------------------------------
