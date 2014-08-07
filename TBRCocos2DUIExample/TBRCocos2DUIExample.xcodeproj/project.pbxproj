@@ -200,8 +200,9 @@
 		4FD4FAA119937E250050E99E /* LICENSE_Chipmunk.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4FD4FAA019937E250050E99E /* LICENSE_Chipmunk.txt */; };
 		4FD4FAA519937E250050E99E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4FAA419937E250050E99E /* main.m */; };
 		4FD4FAA919937E250050E99E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4FAA819937E250050E99E /* AppDelegate.m */; };
-		4FD4FAAC19937E250050E99E /* HelloWorldScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4FAAB19937E250050E99E /* HelloWorldScene.m */; };
-		4FD4FAAF19937E250050E99E /* IntroScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4FAAE19937E250050E99E /* IntroScene.m */; };
+		4FD4FABA1993806D0050E99E /* CarouselScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4FAB91993806D0050E99E /* CarouselScene.m */; };
+		4FD4FAC01993815A0050E99E /* TBRCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4FABD1993815A0050E99E /* TBRCarousel.m */; };
+		4FD4FAC11993815A0050E99E /* TBRPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4FABF1993815A0050E99E /* TBRPageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -609,10 +610,12 @@
 		4FD4FAA419937E250050E99E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Supporting Files/main.m"; sourceTree = "<group>"; };
 		4FD4FAA719937E250050E99E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		4FD4FAA819937E250050E99E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		4FD4FAAA19937E250050E99E /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		4FD4FAAB19937E250050E99E /* HelloWorldScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HelloWorldScene.m; path = Classes/HelloWorldScene.m; sourceTree = "<group>"; };
-		4FD4FAAD19937E250050E99E /* IntroScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroScene.h; path = Classes/IntroScene.h; sourceTree = "<group>"; };
-		4FD4FAAE19937E250050E99E /* IntroScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = IntroScene.m; path = Classes/IntroScene.m; sourceTree = "<group>"; };
+		4FD4FAB81993806D0050E99E /* CarouselScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarouselScene.h; path = Classes/CarouselScene.h; sourceTree = "<group>"; };
+		4FD4FAB91993806D0050E99E /* CarouselScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarouselScene.m; path = Classes/CarouselScene.m; sourceTree = "<group>"; };
+		4FD4FABC1993815A0050E99E /* TBRCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRCarousel.h; sourceTree = "<group>"; };
+		4FD4FABD1993815A0050E99E /* TBRCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRCarousel.m; sourceTree = "<group>"; };
+		4FD4FABE1993815A0050E99E /* TBRPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBRPageControl.h; sourceTree = "<group>"; };
+		4FD4FABF1993815A0050E99E /* TBRPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBRPageControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -675,6 +678,7 @@
 		4FD4F84719937E230050E99E /* TBRCocos2DUIExample */ = {
 			isa = PBXGroup;
 			children = (
+				4FD4FABB1993815A0050E99E /* TBRCocos2DUI */,
 				4FD4F84819937E230050E99E /* Resources */,
 				4FD4F87119937E230050E99E /* Libraries */,
 				4FD4FAA619937E250050E99E /* Classes */,
@@ -1425,12 +1429,22 @@
 			children = (
 				4FD4FAA719937E250050E99E /* AppDelegate.h */,
 				4FD4FAA819937E250050E99E /* AppDelegate.m */,
-				4FD4FAAA19937E250050E99E /* HelloWorldScene.h */,
-				4FD4FAAB19937E250050E99E /* HelloWorldScene.m */,
-				4FD4FAAD19937E250050E99E /* IntroScene.h */,
-				4FD4FAAE19937E250050E99E /* IntroScene.m */,
+				4FD4FAB81993806D0050E99E /* CarouselScene.h */,
+				4FD4FAB91993806D0050E99E /* CarouselScene.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		4FD4FABB1993815A0050E99E /* TBRCocos2DUI */ = {
+			isa = PBXGroup;
+			children = (
+				4FD4FABC1993815A0050E99E /* TBRCarousel.h */,
+				4FD4FABD1993815A0050E99E /* TBRCarousel.m */,
+				4FD4FABE1993815A0050E99E /* TBRPageControl.h */,
+				4FD4FABF1993815A0050E99E /* TBRPageControl.m */,
+			);
+			name = TBRCocos2DUI;
+			path = ../../TBRCocos2DUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1555,7 +1569,6 @@
 				4FD4F88219937E230050E99E /* CCEffect.m in Sources */,
 				4FD4FA2019937E240050E99E /* CCBAnimationManager.m in Sources */,
 				4FD4F98E19937E240050E99E /* CCVertex.m in Sources */,
-				4FD4FAAC19937E250050E99E /* HelloWorldScene.m in Sources */,
 				4FD4F8C219937E230050E99E /* CCAnimationCache.m in Sources */,
 				4FD4F97C19937E240050E99E /* base64.c in Sources */,
 				4FD4F90519937E230050E99E /* CCParticleSystemBase.m in Sources */,
@@ -1593,6 +1606,7 @@
 				4FD4F92319937E230050E99E /* CCResponderManager.m in Sources */,
 				4FD4F95519937E240050E99E /* CCTransition.m in Sources */,
 				4FD4F9AC19937E240050E99E /* OALActionManager.m in Sources */,
+				4FD4FABA1993806D0050E99E /* CarouselScene.m in Sources */,
 				4FD4F91019937E230050E99E /* CCPhysicsNode.m in Sources */,
 				4FD4F9B219937E240050E99E /* OALUtilityActions.m in Sources */,
 				4FD4F8EA19937E230050E99E /* CCMotionStreak.m in Sources */,
@@ -1606,6 +1620,7 @@
 				4FD4FA2F19937E240050E99E /* CCBLocalizationManager.m in Sources */,
 				4FD4F90D19937E230050E99E /* CCPhysicsJoint.m in Sources */,
 				4FD4F94219937E230050E99E /* CCTextureCache.m in Sources */,
+				4FD4FAC01993815A0050E99E /* TBRCarousel.m in Sources */,
 				4FD4F88619937E230050E99E /* CCEffectContrast.m in Sources */,
 				4FD4FA1119937E240050E99E /* CCSlider.m in Sources */,
 				4FD4F88E19937E230050E99E /* CCEffectPixellate.m in Sources */,
@@ -1639,6 +1654,7 @@
 				4FD4F99B19937E240050E99E /* TGAlib.m in Sources */,
 				4FD4F8AE19937E230050E99E /* CCActionInstant.m in Sources */,
 				4FD4F8B119937E230050E99E /* CCActionInterval.m in Sources */,
+				4FD4FAC11993815A0050E99E /* TBRPageControl.m in Sources */,
 				4FD4F8DF19937E230050E99E /* CCNodeColor.m in Sources */,
 				4FD4F96D19937E240050E99E /* CCAppDelegate.m in Sources */,
 				4FD4F8CD19937E230050E99E /* CCDirector.m in Sources */,
@@ -1660,7 +1676,6 @@
 				4FD4F8FA19937E230050E99E /* CCParticleBatchNode.m in Sources */,
 				4FD4F99419937E240050E99E /* NSAttributedString+CCAdditions.m in Sources */,
 				4FD4FAA519937E250050E99E /* main.m in Sources */,
-				4FD4FAAF19937E250050E99E /* IntroScene.m in Sources */,
 				4FD4F89219937E230050E99E /* CCEffectStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1859,6 +1874,7 @@
 				4FD4FAB419937E250050E99E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4FD4FAB519937E250050E99E /* Build configuration list for PBXNativeTarget "TBRCocos2DUIExample" */ = {
 			isa = XCConfigurationList;
@@ -1867,6 +1883,7 @@
 				4FD4FAB719937E250050E99E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
